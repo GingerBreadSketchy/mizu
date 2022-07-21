@@ -66,7 +66,7 @@ module.exports = arus = async (arus, m, chatUpdate, store) => {
         const groupOwner = m.isGroup ? groupMetadata.owner : ''
         const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
         const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
-        const time = moment.tz('Asia/Kolkata').format('DD/MM HH:mm:ss')
+        const time = moment.tz('Africa/Nairobi').format('DD/MM HH:mm:ss')
         const mentionByTag = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
        const mentionByReply = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
         //db fetch
@@ -173,9 +173,9 @@ case '':
 {buttonId: `${prefix}info`, buttonText: {displayText: '🎐Bot status'}, type: 1}
 ]
 let buttonMessaged = {
-        image: {url:"https://telegra.ph/file/2e9e255eb80abbde0f001.jpg"},
+        image: {url:"https://telegra.ph/file/97ad903ba5a233f75a751.jpg"},
         caption: `*Kon'nichiwa ${pushname} Did You Mean ${prefix}help ?*`,
-        footer: '©Arus 2022',
+        footer: '𝙶𝙸𝙽𝙶𝙴𝚁   2022',
         buttons: dbut,
         headerType: 4
     }
@@ -216,7 +216,7 @@ let ter = `📚 *Commands*: 55\n👥 *Users*: ${tr}\n🔰 *Groups*: ${ur}\n🚫 
 console.log(ter)
    let buttonMessaged = {
         text: ter,
-        footer: '©ARUS',
+        footer: '𝙶𝙸𝙽𝙶𝙴𝚁  ',
         buttons: dbut,
         headerType: 4
     }
@@ -241,7 +241,7 @@ break
 		   case "help":
                    case 'menu':
                    const hlp=`
-*(❤️ω❤️)Kon'nichiwa 👋🏻 watashiwa ${pushname} Darling I'm Mizuhara*
+*(❤️ω❤️) Yooh Hello 👋🏻 vipi ${pushname} mtunguyaz I'm Kinyaru*
 
 📝Note: if Bot did not responding then it's offline or owner internet issue so please wait until Bot comes online.!
 
@@ -270,7 +270,7 @@ break
 ━━━━『💻Utils💻』━━━━
 ❐ google, image, meme, subreddit, tourl, img, iguser, gif, sticker, take, pinterest, carbon
 
- 🎐 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝘼𝙧𝙪𝙨 🎐`			     
+ 🎐 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙶𝙸𝙽𝙶𝙴𝚁   🎐`			     
 const hhbut = [
 {buttonId: '=info', buttonText: {displayText: '📥Info'}, type: 1},
 {buttonId: '=profile', buttonText: {displayText: '⭐Profile'}, type: 1}
@@ -278,7 +278,7 @@ const hhbut = [
 let hbutto = {
         file: arus.sendMessage(m.chat,{video:fs.readFileSync('./trash/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
         caption: hlp,
-        footer: '©Arus 2022',
+        footer: '𝙶𝙸𝙽𝙶𝙴𝚁   2022',
         buttons: hhbut,
         headerType: 4
     }
@@ -1851,7 +1851,7 @@ break
                 for (let i of anu) {
                     //await sleep(1500)
 
-  let txt = `🔰</ _*Arus Broadcast*_ >🔰\n\n🍀 *Author:* ${pushname}\n\n🏮 *Message:* ${bct}`
+  let txt = `🔰</ _*Nyaru Broadcast*_ >🔰\n\n🍀 *Author:* ${pushname}\n\n🏮 *Message:* ${bct}`
 //const stick=fs.readFileSync(`./trash/right.webp`)
 //await arus.sendMessage(m.chat,{sticker:stick},{quoted:m})
 await arus.sendMessage(i, { video: { url: "https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4" }, mimetype: 'video/mp4', fileName: `bc.mp4`, caption: `${txt}` })
@@ -1866,7 +1866,7 @@ arus.sendMessage(m.chat,{text:`❗ Couldn't find any matching commands. Try agai
 
     } catch (err) {
         console.log(util.format(err))
-        const time = moment.tz('Asia/Kolkata').format('DD/MM HH:mm:ss')
+        const time = moment.tz('Africa/Nairobi').format('DD/MM HH:mm:ss')
         //arus.sendMessage("12033039020236931@g.us",{text:`*Time:* ${time}\n\n`+`*ERROR:* ${util.format(err)}`})
     
     }
